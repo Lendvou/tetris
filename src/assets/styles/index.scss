@@ -1,0 +1,68 @@
+@font-face {
+	font-family: 'Source sans pro';
+	src: url(../fonts/sourcesansprosemibold.ttf);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'source sans pro';
+}
+
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 100vw;
+	min-height: 100vh;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.start-button {
+	// border: 1px solid #242424;
+	border: none;
+	background-color: #fe0000;
+	color: white;
+	padding: 10px 14px;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	font-size: 17px;
+	outline: none;
+}
+
+.vessel {
+	display: flex;
+	padding: 1px;
+	border: 2px solid #d0d0d0;
+
+	&__row {
+		display: flex;
+	}
+
+	// &__col {
+	// }
+}
+
+.square {
+	margin: 1px;
+	width: 40px;
+	height: 40px;
+	background-color: #f7f7f7;
+	border: 2px solid #dadada;
+
+	&--is-active {
+		background-color: #ea391e;
+	}
+}
